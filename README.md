@@ -1,18 +1,17 @@
-Setup Environment for Paperspace Gradient Notebook Command Line Interface
+###Setup Environment for Paperspace Gradient Notebook
 
-Description:
-This setup.sh script is designed to get your Python environment ready for Paperspace Gradient Notebook. It’ll update your system, install Python 3.7 and its dependencies, create a virtual environment, and set up pip and the Gradient SDK. This script is super powerful. Normally, you’d have to configure your notebooks directly through the Paperspace website, but with this setup, you can do it all right from the terminal!
+Overview
 
-Steps:
+This setup script, setup.sh, is designed to help you quickly prepare a Python environment for running Paperspace Gradient Notebooks. Normally, you’d have to configure everything directly through the Paperspace web interface, but with this setup, you can get your notebooks up and running just by using terminal commands. How cool is that?
 
-1. Create a file named setup.sh in your desired directory.
-Use this command in the terminal to create the file:
+Steps to Follow
+
+1. Create a file named setup.sh in your desired directory. Open your terminal and run:
 
 nano setup.sh
 
 
-2. Paste the following code into the setup.sh file.
-Here’s the code you need to add:
+2. Paste the following code into the setup.sh file. Here’s the code you need:
 
 #!/bin/bash
 
@@ -43,36 +42,34 @@ python get-pip.py
 pip --version
 sudo pip install -U gradient
 
-After opening the file in the editor, paste the whole code above, save it by pressing CTRL + O, hit Enter to confirm, and exit with CTRL + X.
+Once you’ve got the editor open, paste the code above, save it by pressing CTRL + O, hit Enter, and exit with CTRL + X.
 
 
-3. Save the file and give it executable permissions.
-Before running it, make sure to give executable permissions with:
+3. Save and give execute permissions to setup.sh. Before running the script, make it executable with this command:
 
 chmod +x setup.sh
 
 
-4. Run the setup.sh file to execute all the commands.
-Use this command to run the script:
+4. Run setup.sh to execute all the commands. Fire it up with:
 
 ./setup.sh
 
 
 
-What It Does:
+What Happens Next
 
-This setup.sh script will do a bunch of things:
+When you run this script, it will:
 
 Update and upgrade your system packages.
 
-Install essential dependencies like build-essential, libssl-dev, libbz2-dev, and more for your Python environment.
+Install essential dependencies like build-essential, libssl-dev, libbz2-dev, and more to get your Python environment up and running.
 
-Add the deadsnakes PPA to get Python 3.7.
+Add the deadsnakes PPA to provide access to older Python versions like 3.7.
 
 Install Python 3.7 and pip, then create a virtual environment for better package management.
 
-Finally, it installs the Gradient SDK using pip to run your Paperspace notebooks through the API token.
+Install the Gradient SDK via pip so you can easily run your Paperspace notebooks with just your API token.
 
 
-Once you run this script, your environment will be all set up and ready to go for Paperspace Gradient Notebook!
+After you run this setup, you’ll be all set to dive into using Gradient Notebooks on Paperspace!
 
